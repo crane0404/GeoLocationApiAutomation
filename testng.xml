@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Geolocation API Tests">
+    <listeners>
+        <listener class-name="utils.ExtentReportListener"/>
+    </listeners>
+    <test name="Geolocation Tests">
+        <classes>
+            <class name="GeolocationAPITests"/>
+        </classes>
+    </test>
+</suite>
+
+<!--
+Before Execution:- set your google api key in env using following commands:
+
+
+For Windows:-
+Open Command Prompt (cmd) as Administrator (to have permission to set environment variables)
+Run command:
+setx GOOGLE_API_KEY "your_actual_api_key_here"
+
+FOr Mac/Linux:
+Open a terminal window and export the environment variable using the export command
+Run Command:
+export GOOGLE_API_KEY="your_actual_api_key_here"
+-->
